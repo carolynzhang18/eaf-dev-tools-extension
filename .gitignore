@@ -10,6 +10,8 @@
 
 # production
 /build
+/dist/manifest.json
+/dist/js
 
 # misc
 .DS_Store
