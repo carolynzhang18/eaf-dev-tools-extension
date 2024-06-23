@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from '@emotion/styled';
+import Utilities from './Utilities';
+import Links from './Links';
 
-function App() {
+const StyledDiv = styled.div`
+  width: 240px;
+  padding: 0px 5px;
+`;
+
+const Title = styled.h1`
+  font-size: 18px;
+`;
+
+const Subtitle = styled.h2`
+  font-size: 14px;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledDiv>
+      <Title>EAF Dev Tools 😎</Title>
+      <Subtitle>Utilities</Subtitle>
+      <Utilities />
+      <Subtitle>Links</Subtitle>
+      <Links />
+    </StyledDiv>
   );
 }
 
