@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+# EAF Dev Tools Extension
+A Chrome extension with helpful utility functions and links for project development at [Extend-A-Family (EAF)](https://github.com/uwblueprint/extend-a-family)! 🫶
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Add Extension to Chrome
 
-## Available Scripts
+1. Download the zip file containing the extension: [eaf-dev-tools-extension-1.0.zip](https://github.com/carolynzhang18/eaf-dev-tools-extension/raw/main/eaf-dev-tools-extension-1.0.zip)
+2. Unzip the downloaded file.
+3. In your Chrome browser, go to [chrome://extensions/](chrome://extensions/).
+4. Enable the "Developer mode" toggle in the top right corner of the screen. Three new buttons should appear in the top left corner of the page.
+5. Click on the "Load unpacked" button. This should prompt you to select an extension directory.
+6. Select your `eaf-dev-tools-extension-1.0` folder. You should now see a new extension "EAF Dev Tools" has been added to your list of extensions.
+7. Click on the "Details" button for the extension and enable the "Pin to toolbar" toggle for easy access.
 
-In the project directory, you can run:
+Voila! ✨
 
-### `npm start`
+## Info: Verify Accessibility Plugin
+This plugin runs a snapshot of the current page through [Axe](https://github.com/dequelabs/axe-core), a website accessibility testing engine, and identifies problems by injecting the DOM with information about rule violations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Screenshot 2024-06-23 at 10 55 3](https://github.com/carolynzhang18/eaf-dev-tools-extension/assets/82423082/4fc1a480-62ad-4c17-b794-974e990f3817)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To use this plugin:
+1. Go to a frontend page (`http://localhost:3000/<page>`).
+2. Open the extension and click the "Verify Accessibility" button under "Utilities". This will run the plugin.
+3. Each violation is outlined by a rectangle. A red rectangle means this is a critical/serious violation, while an orange rectangle means this is a moderate/minor violation.
+4. Click on a rectangle to get more details about the violation and potential fixes for the error. You'll then be asked if you want to open the external help page associated with this error, which contains more information and examples.
