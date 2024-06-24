@@ -4,7 +4,7 @@ import SubtitlesIcon from '@mui/icons-material/Subtitles';
 import labels from "./labels";
 import { copyAccessToken, runAccessibilityTest } from "./utilityFunctions";
 
-const Utilities = () => {
+const Plugins = () => {
   return (
     <Grid container spacing={2}>
       <Grid item xs={4}>
@@ -25,4 +25,4 @@ const Utilities = () => {
   );
 }
 
-export default Utilities;
+export default Plugins;

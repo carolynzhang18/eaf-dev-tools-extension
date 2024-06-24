@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Divider } from '@mui/material';
-import Utilities from './Utilities';
+import Plugins from './Plugins';
 import Links from './Links';
 import { useTheme } from '@mui/material';
 
@@ -32,8 +32,8 @@ const App = () => {
       <main>
         <Title>EAF Dev Tools 😎</Title>
         <Divider />
-        <Subtitle $color={theme.palette.primary.dark}>Utilities</Subtitle>
-        <Utilities />
+        <Subtitle $color={theme.palette.primary.dark}>Plugins</Subtitle>
+        <Plugins />
         <br />
         <Divider />
         <Subtitle $color={theme.palette.primary.dark}>Links</Subtitle>

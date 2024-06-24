@@ -1,14 +1,14 @@
 # EAF Dev Tools Extension
-A Chrome extension with helpful utility functions and links for project development at [Extend-A-Family (EAF)](https://github.com/uwblueprint/extend-a-family)! 🫶
+A Chrome extension with helpful plugins and links for project development at [Extend-A-Family (EAF)](https://github.com/uwblueprint/extend-a-family)! 🫶
 
 ## Add Extension to Chrome
 
-1. Download the zip file containing the extension: [eaf-dev-tools-extension-1.0.zip](https://github.com/carolynzhang18/eaf-dev-tools-extension/raw/main/eaf-dev-tools-extension-1.0.zip)
+1. Download the zip file containing the extension: [eaf-dev-tools-extension.zip](https://github.com/carolynzhang18/eaf-dev-tools-extension/raw/main/eaf-dev-tools-extension.zip)
 2. Unzip the downloaded file.
 3. In your Chrome browser, go to [chrome://extensions/](chrome://extensions/).
 4. Enable the "Developer mode" toggle in the top right corner of the screen. Three new buttons should appear in the top left corner of the page.
 5. Click on the "Load unpacked" button. This should prompt you to select an extension directory.
-6. Select your `eaf-dev-tools-extension-1.0` folder. You should now see a new extension "EAF Dev Tools" has been added to your list of extensions.
+6. Select your `eaf-dev-tools-extension` folder. You should now see a new extension "EAF Dev Tools" has been added to your list of extensions.
 7. Click on the "Details" button for the extension and enable the "Pin to toolbar" toggle for easy access.
 
 Voila! ✨
