@@ -10,5 +10,14 @@
   "permissions": [
     "activeTab",
     "scripting"
-  ]
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://localhost:3000/*"],
+      "js": ["assets/content.js"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
 }
