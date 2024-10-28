@@ -24,7 +24,7 @@ chrome.runtime.onMessage.addListener((request) => {
       element.onclick = (event) => {
         event.stopPropagation();
         alert(
-          `VIOLATION (${impact.toUpperCase()}): ${nodeData.any[0].message}\n\nSUGGESTION: ${nodeData.failureSummary}`
+          `VIOLATION (${impact.toUpperCase()}): ${nodeData.any[0]?.message ?? "[no message available]"}\n\nSUGGESTION: ${nodeData.failureSummary}`
         );
         const redirect = prompt("Open external help page? [y/n] (default n)");
         if (redirect.toLowerCase() === "y") {
